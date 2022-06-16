@@ -36,7 +36,7 @@
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_HTTPHEADER => [
                     "X-RapidAPI-Host: contextualwebsearch-websearch-v1.p.rapidapi.com",
-                    "X-RapidAPI-Key: c91a418851mshff06c8d0997572fp177618jsn61836241bc4e",
+                    "X-RapidAPI-Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                     'Content-Type: application/json'
                 ],
             ]);
@@ -50,8 +50,8 @@
                 echo "cURL Error #:" . $err;
             } else {
                 function jsonp_decode($jsonp, $assoc = false)
-                { // PHP 5.3 adds depth as third parameter to json_decode
-                    if ($jsonp[0] !== '[' && $jsonp[0] !== '{') { // we have JSONP
+                { 
+                    if ($jsonp[0] !== '[' && $jsonp[0] !== '{') {
                         $jsonp = substr($jsonp, strpos($jsonp, '('));
                     }
                     return json_decode(trim($jsonp, '();'), $assoc);
