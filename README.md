@@ -1,2 +1,2 @@
-# ChatApp
-A messaging app using Javascript
+# News Search App
+An app using Websearch API with PHP.
